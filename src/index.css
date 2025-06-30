@@ -1,0 +1,106 @@
+body{
+    background: linear-gradient(to right, black, rgb(116, 167, 218));
+    color: gold;
+
+}
+h2{
+    color: rgb(126, 238, 199);
+}
+
+.info{
+    color: rgb(247, 255, 98);
+
+}
+
+.personajes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    background-color: rgb(69, 69, 69);
+    box-shadow: 0 12px 28px rgba(236, 234, 219, 0.905);
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.interno{
+    display: grid;
+    
+}
+
+.card-character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    justify-content: space-around;
+     box-shadow: 0 0px 18px rgba(236, 234, 219, 0.905);
+     background-color: black;
+}
+.c-character{
+    display: flex;
+    align-self: center;
+    
+}
+
+.c-planetas{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(214, 193, 235);
+    justify-content: space-around;
+}
+
+#fav{
+    color: gold;
+}
+
+.ss{
+    color: aqua;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.like{
+background-color: rgb(144, 181, 236);
+}
+
+.det{
+background-color: rgb(187, 255, 255);
+}
+
+.fondo-planeta{
+    background-color: rgb(217, 184, 248);
+}
+
+.per{
+    background-color: rgb(9, 67, 69);
+    border-radius: 15px;
+}
+
+.uno{
+    box-shadow: 5px 0px 15px;
+}
+
+.externo{
+    background-color: black;
+}
+.problematicos{
+    box-shadow: 5px 0px 15px;
+}
+
+.nombre{
+    color: black;
+}

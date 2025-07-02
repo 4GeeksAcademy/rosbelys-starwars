@@ -33,13 +33,13 @@ export default function DetailPlanet() {
   console.log(detallePlaneta)
   return (
     //aqui se que debo poner un ternario
-    <div>
+    <div className="card-title nombre" >
       {detallePlaneta ? (
         <div>
-          <h1>Detalles de:{detallePlaneta.name}</h1><br />
-          <p>El Clima del Planeta : <span className="info">{detallePlaneta.climate}</span></p>
-          <p>La Poblacion es de: <span className="info">{detallePlaneta.population}</span></p>
-          <p>Los Terrenos: <span className="info">{detallePlaneta.terrain}</span></p>
+          <h2 className="info">Detalles de:{detallePlaneta.name}</h2><br />
+          <p className="descripcion">El Clima del Planeta : <span className="info">{detallePlaneta.climate}</span></p>
+          <p className="descripcion">La Poblacion es de: <span className="info">{detallePlaneta.population}</span></p>
+          <p className="descripcion">Los Terrenos: <span className="info">{detallePlaneta.terrain}</span></p>
         </div>
 
 

@@ -42,13 +42,13 @@ function DetailPeople() {
 
             {
                 (hayDatos === true) ? (
-                    <div>
-                        <h2>Detalles de: {detallePersonaje.name}</h2>
+                    <div className='card-title nombre'>
+                        <h2 className='info'>Detalles de: {detallePersonaje.name}</h2>
                         <br />
 
-                        <p>La altura de este personaje: <span className='info'>{detallePersonaje.height}</span></p>
-                        <p>El peso de este personaje:  <span className='info'>{detallePersonaje.mass}</span></p>
-                        <p>El genero de este personaje:  <span className='info'>{detallePersonaje.gender}</span></p>
+                        <p className='descripcion'>La altura de este personaje: <span className='info'>{detallePersonaje.height}</span></p>
+                        <p className='descripcion'>El peso de este personaje:  <span className='info'>{detallePersonaje.mass}</span></p>
+                        <p className='descripcion'>El genero de este personaje:  <span className='info'>{detallePersonaje.gender}</span></p>
                     </div>
 
                 ) : (<p>No hay datos</p>)

@@ -5,11 +5,15 @@ body{
 }
 h2{
     color: rgb(126, 238, 199);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .info{
-    color: rgb(247, 255, 98);
+    color: rgb(157, 246, 192);
 
+}
+.descripcion{
+    font-size: 40px;
 }
 
 .personajes{
@@ -102,5 +106,5 @@ background-color: rgb(187, 255, 255);
 }
 
 .nombre{
-    color: black;
+    color: rgb(183, 176, 176);
 }

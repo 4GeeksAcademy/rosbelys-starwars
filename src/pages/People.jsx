@@ -18,7 +18,7 @@ function People() {
     <div className="container py-5">
       {personajes && personajes.length > 0 ? (
         <>
-          <h2 className="mb-4">Lista de personajes</h2>
+          <h2 className="mb-4">Personajes</h2>
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {personajes.map((personaje, index) => (
               <div className="col" key={index + 1}>

@@ -26,23 +26,23 @@ function Vehiculos() {
     <div className="container py-5">
       {vehiculos && vehiculos.length > 0 ? (
         <>
-          <h1 className="mb-4">lista de Vehiculos</h1>
+          <h2 className="mb-4">Vehiculos</h2>
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {vehiculos.map((vehiculo, index) => (
               <div className="col" key={index + 1}>
-                <div className="card h-100 shadow-sm">
-                  <div className="card-body">
-                    <h5 className="card-title">{vehiculo.name}</h5>
-                   
-                    <button className="btn btn-success mt-2"
-                    onClick={() => handleNavigate(index + 1)}>
-                      DetalleVehiculo
+                <div className="card-body per">
+                  <h5 className="card-title nombre">{vehiculo.name}</h5>
+                  <div className="botones">
+                    <button className="btn det m-2"
+                      onClick={() => handleNavigate(index)}>
+                      Ver Detalle
                     </button>
-                    <button className='btn btn-success mt-3'>
-                      ❤️
+                    <button className='btn like m-2'>
+                      ⭐
                     </button>
-
                   </div>
+
+
                 </div>
               </div>
             ))}

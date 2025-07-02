@@ -100,7 +100,7 @@ export const planetEspecific = async (dispatch,id) => {
 
 export const vehiculoEspecifico = async (dispatch,id) =>{
     try {
-        const response = await fetch(`${apiUrlBase}detailvehiculo/${id}`)
+        const response = await fetch(`${apiUrlBase}vehicles/${id}`)
         if(!response.ok){
             throw new Error("Error al obtener el vehiculo");
             }

@@ -27,19 +27,26 @@ function DetailVehiculos() {
       vehiculoActive()
     }
   }, [detalleVehiculo]);
+  console.log(detalleVehiculo);
 
   return (
-    // aqui me hace falta el ternario
-    <div className='container card-vehiculo-detail'>
-      <div>
-        <h2>Nombre:{vehiculoEspecifico.name}</h2>
-        <br />
-        <p>El Modelo es: <span className='info'>{vehiculoEspecifico.model} </span></p>
-        <p>La Longitud es: <span className='info'>{vehiculoEspecifico.length}</span></p>
-      </div>
 
+    <div className='card-title nombre'>
+      {
+        (detalleVehiculo !== null) ? (
 
+          <div>
+            <h2 className='info'>Nombre:{detalleVehiculo.name}</h2>
+
+            <p className='descripcion'>El Modelo es: <span className='info'>{detalleVehiculo.model}</span></p>
+            <p className='descripcion'>La Longitud es: <span className='info'>{detalleVehiculo.length}</span></p>
+          </div>
+        ) : (<p>No hay datos</p>)
+      }
     </div>
+
+
+
   )
 }
 
